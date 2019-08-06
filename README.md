@@ -118,6 +118,8 @@ Playbook
 #  Creating the template files 
 
 ---
+```sh
+
 # vim virtualhost.j2
 <virtualhost *:80>
     servername {{domain}}
@@ -125,9 +127,12 @@ Playbook
     directoryindex index.html index.php
 </virtualhost>
 
+```
 ---
 
 # vim wp-config.php.j2
+
+```sh
 
 <?php
 
@@ -171,7 +176,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 require_once( ABSPATH . 'wp-settings.php' );
-    
+```
 ---
 
 
